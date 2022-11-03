@@ -1,0 +1,115 @@
+
+:root {
+    --text: #1e293b;
+    --blue: #2196f3;
+    --tealbg: #4b9487;
+
+
+
+}
+
+
+
+
+
+ion-button{
+   --ion-color-base: none;
+   background: none;
+   font-size: 16px;
+   text-transform: none;
+   letter-spacing: normal;
+   height: 50px;
+   padding: 0;
+   border-radius: 6px;
+   color: #fff;
+}
+
+.ion-color-teal button {
+   background: #f00 !important;
+   --ion-color-base : #f00;
+   --background:var(--tealbg);
+
+}
+
+ion-button .button-native {
+   background: #f00;
+
+}
+
+
+ion-button.ion-color-light{
+   --ion-color-contrast: #4b9487 !important;
+   --color: #f00;
+   font-weight: 700;
+   width: 100%;
+}
+
+
+
+.white-text{
+   color: #fff;
+}
+
+
+.teal-bg{
+	background:var(--tealbg);
+    --background:var(--tealbg);
+    color: #fff;
+
+
+}
+
+
+.aligner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100%;
+}
+
+.align-top{
+    align-self: flex-start;
+    width: 100%;
+}
+
+.align-bottom{
+    align-self: flex-end;
+    width: 100%;
+}
+.align-middle{
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+ .middle-wrap{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.logo-wrap{
+   margin-bottom: 80px;
+}
+.logo-wrap img{
+   max-width: 160px;
+}
+
+.teal-bg h3{
+   color: #fff;
+}
+
+.lang-wrap{
+   max-width: 70%;
+   margin: 0 auto 80px;
+}
+
+ion-list { background: none; }
+
+

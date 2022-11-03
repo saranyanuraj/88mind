@@ -1,0 +1,63 @@
+
+<ion-content class="teal-bg">
+
+<div class="middle-wrap">
+
+
+
+
+<div class="login-page">
+  <div class="logo-wrap"><img src="/assets/images/logo.png"></div>
+  <h2 class="white-text">Login</h2>
+  <div class="login-wrap">
+    <form #loginForm="ngForm">
+      <ion-list color="none">
+      <ion-item color="none">
+      <ion-icon color="light" name="person"></ion-icon>
+      <ion-input class="input" name="username" ngModel #uemail="ngModel" placeholder="{{'Email Address/Username'}}"[(ngModel)] = username></ion-input>
+      </ion-item>
+
+      <ion-item color="none">
+      <!-- <ion-label position="floating" color="dark">{{'Password'}}</ion-label> -->
+      <ion-icon color="light" name="lock-closed"></ion-icon>
+      <ion-input
+      class="input"
+      name="password"
+      ngModel
+      #upass="ngModel"
+      [(ngModel)] = password
+      placeholder="Enter password"
+      type="password"
+      ></ion-input>
+      </ion-item>
+
+
+
+      <p class="forgot-pass"><a href="/forgot-password" class="white-text">{{'Forgot Password?'}}</a></p>
+      <div class="btn-wrap">
+        <ion-button expand="block" shape="round" color="light"  (click)="login()">
+        {{'Login'}}
+        </ion-button>
+      </div>
+      <p class="white-text">Don't have an account? <a href="login" class="white-text"><b>Register</b></a></p>
+      </ion-list>
+      
+    </form>
+  </div>
+  <div class="btn-group">
+    <ion-button color="light" shape="round"(click)="login()"> {{'Join the 88 Community'}}</ion-button>
+    <ion-button color="light" shape="round" (click)="login()">{{'The Kind Centre'}} </ion-button>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+</ion-content>
